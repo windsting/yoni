@@ -1,5 +1,9 @@
 # Yes Or No Image
 
+<p align="right">
+    <a href="REASME.md">中文版</a>
+</p>
+
 This project is a learning result of a training on Meachine Learning. It's a simple(**is** or **is not**) image classify framework, using deep learning Convolutional Neural Network, contains tools for:
 
 1. gathering dataset images for training
@@ -51,10 +55,6 @@ That's it, you've prepared.
     1. Have a same MD5 hash value with existing image
 
 ### Training your Neural Network
-
-<p align="right">
-    <a href="REASME.md">中文版</a>
-</p>
 
 The Neural Network was defined in the **nn/mycnn.py**, you should edit it or use another python module to **create your own Neural Network**, don't forget to edit `train_network.py` for importing Neural Network from your own module, if you do have your own module.
 
