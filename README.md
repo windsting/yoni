@@ -24,7 +24,7 @@ That's it, you've prepared.
 ### Gathering dataset images
 
 1. Read the `getDataSet.md`, to obtain URL lists for both **is** and **is not** images
-1. Download them into different directories, for a list with name `yes-urls.txt`, the command canbe:
+1. Download them into different directories, for a list with name `yes-urls.txt`, the command can be:
 
     ```sh
     python download_images.py -u yes-urls.txt -o images/yes
