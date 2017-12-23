@@ -2,13 +2,12 @@
 from train_network import load_data, do_it, DEFAULT_TRAIN_IMAGE_SIZE
 
 
-dataset_path = "asset/santa"
-model = "santa"
-train_image_size = DEFAULT_TRAIN_IMAGE_SIZE
+dataset_path = "images/guitar"
+model = "guitar"
 
-EPOCHS = (15, 25, 50)
+EPOCHS = (15, 25, 35)
 LEARN_RATES = (0.001, 0.0001)
-BATCH_SIZES = (32, 64, 100)
+BATCH_SIZES = (32, 48, 64)
 TRAIN_IMAGE_SIZES = (DEFAULT_TRAIN_IMAGE_SIZE,)
 
 
