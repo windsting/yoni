@@ -1,7 +1,7 @@
 # 图辨是非
 
 <p align="right">
-    <a href="REASME.md">English Version</a>
+    <a href="README.md">English Version</a>
 </p>
 
 本项目是关于机器学习培训的结果，是一个简单的（**是**或**非**）图片分类器框架，使用深度学习的卷积神经网络，其中的工具可用于：
