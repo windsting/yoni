@@ -1,7 +1,7 @@
 # Yes Or No Image
 
 <p align="right">
-    <a href="REASME.md">中文版</a>
+    <a href="README.md">中文版</a>
 </p>
 
 This project is a learning result of a training on Meachine Learning. It's a simple(**is** or **is not**) image classify framework, using deep learning Convolutional Neural Network, contains tools for:
