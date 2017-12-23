@@ -1,0 +1,7 @@
+env
+*.pyc
+images/
+output
+.vscode
+static/uploads
+uploads

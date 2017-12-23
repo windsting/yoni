@@ -1,0 +1,29 @@
+.droparea {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+    float: left;
+    line-height: 200px;
+    text-align: center;
+}
+
+.resultarea {
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    float: left;
+    margin-left: 10px;
+}
+
+.tablearea {
+    width: 200px;
+    min-height: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    float: left;
+    margin-left: 10px;
+}
