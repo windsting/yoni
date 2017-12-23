@@ -52,6 +52,10 @@ That's it, you've prepared.
 
 ### Training your Neural Network
 
+<p align="right">
+    <a href="REASME.md">中文版</a>
+</p>
+
 The Neural Network was defined in the **nn/mycnn.py**, you should edit it or use another python module to **create your own Neural Network**, don't forget to edit `train_network.py` for importing Neural Network from your own module, if you do have your own module.
 
 To train your network can use the `train_network.py` with this command:  
