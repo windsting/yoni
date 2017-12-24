@@ -4,6 +4,7 @@ got a result image with predict lable with probability
 from flask import Flask, request, redirect
 from werkzeug.utils import secure_filename
 import cv2
+import os
 
 from download_images import ensure_dir
 from test_network import predict, load_tcnn, parse_args
@@ -37,6 +38,7 @@ def send_file():
     filename = "result_{}".format(filename)
     result_path = "{}/{}".format(save_dir, filename)
     save_path = "{}/{}/{}".format("static", save_dir, filename)
+    ensure_dir(os.path.dirname(save_path))
     cv2.imwrite(save_path, result_image)
 
     # open and close to update the access time.
