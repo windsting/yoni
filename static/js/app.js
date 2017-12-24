@@ -19,6 +19,10 @@ $(function () {
         evt.preventDefault();
         var files = evt.originalEvent.dataTransfer.files;
 
+        doUpload(files);
+    };
+
+    var doUpload = function(files){
         var file = files[0];
         var fileType = file["type"];
         var ValidImageTypes = ["image/gif", "image/jpeg", "image/png"];
@@ -41,7 +45,7 @@ $(function () {
 
         var promise = $.ajax(req);
         promise.then(fileUploadSuccess, fileUploadFail);
-    };
+    }
 
     var dropHandlerSet = {
         dragover: dragHandler,
@@ -49,6 +53,13 @@ $(function () {
     };
 
     $(".droparea").on(dropHandlerSet);
+
+    $('#OpenImgUpload').click(function(){ $('#imgupload').trigger('click'); });
+    var input = document.getElementById('imgupload');
+    input.addEventListener('change', function(e){
+        console.log(input.files);
+        doUpload(input.files);
+    })
 
     fileUploadSuccess(false); // called to ensure that we have initial data
 });
