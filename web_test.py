@@ -1,7 +1,7 @@
 """web test a trained model, user upload an image,
 got a result image with predict lable with probability
 """
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, send_from_directory
 from werkzeug.utils import secure_filename
 import cv2
 import os
@@ -21,6 +21,12 @@ def index():
     "default page is index.html"
     return redirect("static/index.html")
 
+#@app.route("/favicon.ico")
+def favicon():
+    "favicon.ico"
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               "favicon.ico",
+                               mimetype='image/vnd.microsoft.cion')
 
 @app.route("/sendfile", methods=["POST"])
 def send_file():
