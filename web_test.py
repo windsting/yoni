@@ -57,4 +57,4 @@ def send_file():
 if __name__ == '__main__':
     ARGS = parse_args()
     ARGS["m"] = load_tcnn(ARGS["model"])
-    app.run(debug=False, host="0.0.0.0")
+    app.run(debug=False, host="127.0.0.1")
