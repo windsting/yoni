@@ -13,7 +13,7 @@ Flask==0.12.4
 funcsigs==1.0.2
 futures==3.2.0
 h5py==2.7.1
-html5lib==0.9999999
+html5lib==0.999999999
 idna==2.6
 imutils==0.4.4
 isort==4.2.15
